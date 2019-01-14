@@ -6,11 +6,10 @@ export default class Home extends Component{
     static navigationOptions = {
         title: "首页",
         tabBarIcon: ({ focused }) => {
-            if(focused) {
-                return <Image source={{uri: 'https://s10.mogucdn.com/p2/160802/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png'}} style={{ height: 22, width: 22 }}/>;
-            } else { 
-                <Image source={{uri: 'https://s10.mogucdn.com/p2/160802/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png'}} style={{ height: 22, width: 22 }} />;
-            }
+            const icon = focused
+              ? require('../assets/images/homes.png')
+              : require('../assets/images/home.png');
+            return <Image source={icon} style={{ height: 22, width: 22 }} />;
         }
     }
     constructor(props){
