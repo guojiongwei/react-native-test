@@ -56,8 +56,8 @@ export default class Home extends Component{
                                 selecteList
                             })
                         }}
-                        seledImg={require('https://s10.mogucdn.com/p2/160802/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png')}
-                        selImg={require('https://s10.mogucdn.com/p2/160802/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png')}
+                        seledImg={require('./../assets/images/homes.png')}
+                        selImg={require('./../assets/images/home.png')}
                         style={{ flexDirection:'row',
                             flexWrap:'wrap',
                             alignItems:'flex-start',
